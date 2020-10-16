@@ -1,10 +1,15 @@
 import marked from "marked";
-import { createFilter } from "rollup-pluginutils";
+
+const marked = rquire("marked");
+const pluginutils = require("@rollup/pluginutils");
 
 const ext = /\.md$/;
 
 export default function md(options = {}) {
-  const filter = createFilter(options.include || ["**/*.md"], options.exclude);
+  const filter = pluginutils.createFilter(
+    options.include || ["**/*.md"],
+    options.exclude
+  );
 
   if (options.marked) marked.setOptions(options.marked);
   return {
