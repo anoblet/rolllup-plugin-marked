@@ -1,4 +1,4 @@
-const marked = rquire("marked");
+const marked = require("marked");
 const pluginutils = require("@rollup/pluginutils");
 
 const ext = /\.md$/;
