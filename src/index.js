@@ -1,5 +1,3 @@
-import marked from "marked";
-
 const marked = rquire("marked");
 const pluginutils = require("@rollup/pluginutils");
 
