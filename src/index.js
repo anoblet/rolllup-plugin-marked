@@ -3,7 +3,7 @@ const pluginutils = require("@rollup/pluginutils");
 
 const ext = /\.md$/;
 
-export default function md(options = {}) {
+const parse = function (options = {}) {
   const filter = pluginutils.createFilter(
     options.include || ["**/*.md"],
     options.exclude
@@ -24,4 +24,6 @@ export default function md(options = {}) {
       };
     },
   };
-}
+};
+
+module.exports = parse;
