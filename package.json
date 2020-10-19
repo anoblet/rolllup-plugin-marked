@@ -11,5 +11,8 @@
   "devDependencies": {
     "@rollup/pluginutils": "^4.0.0",
     "marked": "^1.2.0"
+  },
+  "peerDependencies": {
+    "marked": "^1.2.0"
   }
 }
